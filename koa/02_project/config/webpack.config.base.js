@@ -29,11 +29,11 @@ const webpackConfig = {
     new CleanWebpackPlugin(),
     // 创建一个全局的常量，可以区分环境等等
     new webpack.DefinePlugin({
-      'process.env': {
-        NODE_ENV: ['production', 'prod'].includes(process.env.NODE_ENV)
+      'process.env.NODE_ENV': JSON.stringify(
+        ['production', 'prod'].includes(process.env.NODE_ENV)
           ? 'production'
           : 'development',
-      },
+      ),
     }),
   ],
   node: {
