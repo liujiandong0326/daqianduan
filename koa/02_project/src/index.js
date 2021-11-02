@@ -14,6 +14,9 @@ const app = new Koa()
 
 const isDevMode = process.env.NODE_ENV !== 'production'
 
+// ohbiurxbsxydcafd  邮件授权码
+// 邮件服务： 阿里云/亚马逊 SES/ sendcloud
+
 /*
  * 使用 koa-compose 集成中间件
  * */
